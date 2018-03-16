@@ -18,7 +18,7 @@
   var addBtn = document.getElementById('enqueue');        //Button to add elements
   var removeBtn = document.getElementById('dequeue');     //Button to remove elements
   var displayArea = document.getElementById('result');    //To display stack
-  var msgArea = document.getElementById('messageArea');   //to display any message
+  var messageArea = document.getElementById('messageArea');   //to display any message
   var inputData = document.getElementById('input');       //the input text field
 
 
@@ -34,19 +34,19 @@
   	this.queuearray[this.rear] = element;
     this.display();
     inputData.value="";
-    msgArea.innerHTML="Element added";
+    messageArea.innerHTML="Element added";
   }
     /*Function to pop the element from the queue*/
   dequeue(){
   	if( this.front > this.rear) {
-      msgArea.innerHTML="Underflow";
+      messageArea.innerHTML="Underflow";
       return;
   	}
   	else{
   		this.front++;
   	}
     this.display();
-    msgArea.innerHTML="Element removed";
+    messageArea.innerHTML="Element removed";
   }
   /*Function to display the queue*/
   display(){
@@ -60,7 +60,7 @@
   var q = new Queue();                          //creating a new queue
   addBtn.addEventListener("click" , function(){
     if(inputData.value == ""){
-      msgArea.innerHTML="Enter a value";
+      messageArea.innerHTML="Enter a value";
       return;
     }
     q.enqueue(inputData.value);
