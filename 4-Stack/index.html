@@ -18,7 +18,7 @@
   var addBtn = document.getElementById('add');        //Button to add elements
   var removeBtn = document.getElementById('remove');  //Button to remove elements
   var displayArea = document.getElementById('result'); //To display stack
-  var msgArea = document.getElementById('messageArea'); //to display any message
+  var messageArea = document.getElementById('messageArea'); //to display any message
   var inputData = document.getElementById('input');      //the input text field
 
 
@@ -33,19 +33,19 @@
   	this.stackarray[this.top] = element;
     this.display();
     inputData.value="";
-    msgArea.innerHTML="Element added";
+    messageArea.innerHTML="Element added";
   	}
     /*Function to pop the element from the stack*/
   	pop(){
       if (this.top < 0){
-  			msgArea.innerHTML="Underflow";
+  			messageArea.innerHTML="Underflow";
         return;
   		}
   	else{
   			this.top--;
   		}
       this.display();
-      msgArea.innerHTML="Element removed";
+      messageArea.innerHTML="Element removed";
   }
   /*Function to display the stack*/
 	display(){
@@ -58,7 +58,7 @@
 var stack = new Stack();          //Creating a new stack object
 addBtn.addEventListener("click" , function(){
   if(inputData.value == ""){
-    msgArea.innerHTML="Enter a value";
+    messageArea.innerHTML="Enter a value";
     return;
   }
   stack.push(inputData.value);
