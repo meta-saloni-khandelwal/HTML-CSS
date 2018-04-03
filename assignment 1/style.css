@@ -1,0 +1,87 @@
+body{
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header {
+    text-align: center;
+
+}
+#header h1{
+  display: inline-block;
+  font-weight: bold;
+}
+#upward-div {
+  margin-top: -100px;
+  display: flex;
+}
+#scaling {
+    background-color: #54E9B7;
+  text-align: center;
+  flex  : 1;
+
+}
+
+#rotation {
+  background-color: #54E9B7;
+  text-align: center;
+  flex : 1;
+}
+#downward-div {
+  margin-top: -250px;
+  display: flex;
+}
+#skew {
+    background-color: #54E9B7;
+  text-align: center;
+  flex  : 1;
+}
+#translate {
+    background-color: #54E9B7;
+  text-align: center;
+  flex : 1;
+}
+.create-style{
+  border: solid 2px black;
+  margin : 200px;
+  height: 400px;
+}
+h2{
+  display: inline-block;
+}
+.set-size{
+  border: solid 3px black;
+  width: 100px;
+  background-color: white;
+  height: 100px;
+  margin: auto;
+  margin-top: 100px;
+}
+#scale{
+   background-color: white;
+  transition: 2s;
+}
+#scale:hover{
+  transform: scale(1.5);
+}
+#rotate {
+  background-color: white;
+  transition: 2s;
+}
+#rotate:hover{
+
+  transform: rotate3d(1,1,1,180deg);
+}
+#skewing {
+  transition: 2s;
+}
+#skewing:hover{
+  transform: skewX(30deg);
+
+}
+#translation{
+  transition-duration: 2s;
+}
+#translation:hover{
+  transform: translate(50px , 50px);
+}

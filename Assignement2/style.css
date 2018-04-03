@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    padding:10px;
+    background: #2d3e50;
+    overflow:hidden;
+}
+
+._posi{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.logo{
+    float:left;
+}
+
+.logo a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 22px;
+}
+
+.nav{
+    float: right;
+    margin-top:4px;
+}
+
+.nav a {
+    color:#fff;
+    text-decoration: none;
+    margin-left:25px;
+}
+
+.container{
+    padding: 100px 10px 100px 10px;
+    background: #328dd6;
+}
+
+.bold_text{
+    padding:30px 150px;
+    border:2px solid #fff;
+    border-radius: 3px;
+    width:220px;
+    margin: 0 auto;
+}
+
+.bold_text h1{
+    font-weight:400;
+    color:#fff;
+}
+
+.jumboclass h2{
+    margin-top:20px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+}
+
+.jumboclass a{
+    padding:5px 20px;
+    background: #fff;
+    border-radius: 3px;
+    color:#328dd6;
+    text-decoration: none;
+}
+.btn{
+    width: 137px;
+    margin:50px auto;
+}
+
+.description{
+    padding:50px;
+}
+
+.description h1{
+    text-align: center;
+    font-weight:500;
+    font-size: 22px;
+    color:#101820;
+}
+
+.product{
+    display: flex;
+    margin-top:50px;
+}
+
+.product_info{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.product_info h1{
+    color:#328dd6;
+}
+
+.product_info h1,.product_info p{
+    text-align: left;
+}
+
+.about{
+    background:#2d3e50;
+    padding:30px;
+}
+
+.test{
+    
+    display: flex;
+}
+
+.about_img{
+    flex: 1;
+}
+
+.about_text{
+    flex:2;
+    margin-top:30px;
+    margin-left:50px;
+    color: #fff;
+}
+
+.form{
+    padding:50px 0px;
+}
+
+.form h1{
+    text-align: center;
+    font-weight:500;
+    font-size:24px;
+}
+
+.for_form{
+    display: flex;
+}
+
+.form_feild {
+    flex: 1;
+}
+
+.about_form {
+    flex: 1;
+}
+
+.form_feild label{
+    font-weight:700;
+}
+
+.form_feild input[type="text"]{
+    width:100%;
+    padding:5px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(143, 142, 142, 0.164) inset;
+    border:1px solid rgba(143, 142, 142);
+}
+
+.form_feild input[type="submit"]{
+    padding:10px;
+    border-radius:3px;
+    background: #328dd6;
+    color: #fff;
+    border: 1px solid #328dd6;
+    margin-top:10px;
+}
+
+.about_form{
+    padding: 10px; 
+    margin-top:20px;   
+}
+
+.form_details h1{
+    text-align: left;
+    margin-left:30px;
+    font-weight:500;
+    font-size:18px;
+}
+
+.form_details p{
+    margin-left:30px;
+}
+
